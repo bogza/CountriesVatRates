@@ -16,7 +16,6 @@ namespace VatRatesCalculator
 
         internal void PrintRates()
         {
-
             RootObject vatRates = VatRatesReader.ReadRatesfromURL(_vatURL);
 
             List<CountryStandardVat> countryStandardVats = VatRatesUtils.GetCountryAndVatInfo(vatRates);            
